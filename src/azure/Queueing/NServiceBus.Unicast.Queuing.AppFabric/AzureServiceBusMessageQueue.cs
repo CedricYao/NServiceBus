@@ -25,6 +25,8 @@ namespace NServiceBus.Unicast.Queuing.Azure.ServiceBus
         public const bool DefaultEnableBatchedOperations = false;
         public const bool DefaultQueuePerInstance = false;
         public const int DefaultBackoffTimeInSeconds = 10;
+        public const int DefaultSBTcpPort = 9354;
+        public const int DefaultSBHttpsPort = 4446;
 
         private readonly Dictionary<string, QueueClient> senders = new Dictionary<string, QueueClient>();
         private static readonly object SenderLock = new Object();
